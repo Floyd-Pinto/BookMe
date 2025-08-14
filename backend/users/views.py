@@ -16,10 +16,6 @@ class RegisterView(generics.CreateAPIView):
     permission_classes = (AllowAny,)
 
 class LoginView(APIView):
-    """
-    API endpoint for user login.
-    Returns JWT tokens upon successful authentication.
-    """
     permission_classes = (AllowAny,)
     serializer_class = UserLoginSerializer
 
@@ -40,7 +36,9 @@ class LoginView(APIView):
                 'user': {
                     'username': user.username,
                     'email': user.email,
-                    'id': user.id
+                    'id': user.id,
+                    'first_name': user.first_name,
+                    'last_name': user.last_name
                 }
             })
         else:
