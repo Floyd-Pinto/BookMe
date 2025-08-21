@@ -6,8 +6,8 @@ from rest_framework import serializers
 class UserRegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True, required=True, style={'input_type': 'password'})
     password2 = serializers.CharField(write_only=True, required=True, label='Confirm password')
-    first_name = serializers.CharField(required=True)
-    last_name = serializers.CharField(required=True)
+    first_name = serializers.CharField(required=False)
+    last_name = serializers.CharField(required=False)
 
     class Meta:
         model = User
