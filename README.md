@@ -4,7 +4,7 @@ A modern train booking platform built with Django REST Framework and Next.js.
 
 ## License
 
-This project is licensed under the GNU License [https://github.com/Floyd-Pinto/BookMe/blob/main/LICENSE.md] - see the LICENSE file for details.
+This project is licensed under the [GNU General Public License v3.0](https://github.com/Floyd-Pinto/BookMe/blob/main/LICENSE.md).
 
 ## Prerequisites
 
